@@ -57,6 +57,7 @@ namespace Webtest.Controllers
 
 
         // DELETE api/prescriptions/{id}
+        [BasicHttpAuthorizeAttribute] // username=ombori / pass=ombori
         public void Delete(string id)
         {
             try
