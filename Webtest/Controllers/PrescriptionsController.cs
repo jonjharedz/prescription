@@ -21,7 +21,6 @@ namespace Webtest.Controllers
         // GET api/prescriptions
         public IEnumerable<Prescription> Get()
         {
-            OmboriContext context = new OmboriContext();
             return _repository.GetPrescriptions();
         }
 
